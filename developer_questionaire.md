@@ -31,7 +31,8 @@ $controller("takeAndUpload";,  function () {
             hostname: "imaginary.com",
             path: "path.to.server/here",
             method: "POST",
-            headers: {Accept: "text/html"}
+            headers: {Accept: "text/html"},
+            data: imgURL
         },
             function onUploadSuccess(response) {
                 console.log("Successfully uploaded! Server responded with status: ", response.statusCode);
